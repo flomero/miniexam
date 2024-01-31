@@ -13,6 +13,8 @@ TEST_SCRIPT_DIR=".tests"
 run_test_script() {
     clear
     script=$1
+    # Add executable permissions to the script
+    chmod +x "$script"
     if [ -x "$script" ]; then
         echo "${BLUE}Running test: $(basename "$script")${NC}"
         . "$script"
