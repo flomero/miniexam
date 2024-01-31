@@ -1,0 +1,7 @@
+directory:				code/ex08
+files to hand in:		ex08.c
+allowed functions:		write
+
+Create a function that takes a string and displays it, but replaces each character with its ASCII value.
+
+void	print_ascii(char *str);
