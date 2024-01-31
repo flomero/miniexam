@@ -15,7 +15,7 @@ EXPECTED_FILE=".tests/ex00/00.expected"
 OUTPUT_FILE="output.tmp"
 
 # Compile the exercise file with the main file
-gcc -o $EXECUTABLE $EXERCISE_DIR/$EXERCISE_FILE $MAIN_FILE
+cc -Wall -Werror -Wextra -o $EXECUTABLE $EXERCISE_DIR/$EXERCISE_FILE $MAIN_FILE
 
 # Check if compilation was successful
 if [ $? -ne 0 ]; then
