@@ -2,12 +2,13 @@ directory:				code/ex6
 files to hand in:		ex6.c
 allowed functions:		write
 
-Create a function that takes a string and displays it, but replaces all vowels with asterisks.
+Create a function that takes a string and displays it,
+but replaces all vowels with asterisks.
 
 void	replace_vowels(char *str);
 
-example:
+Example:
 
 str: "Hello World"
 
-=> output: "H*ll* W*rld"
+=> Output: "H*ll* W*rld"
