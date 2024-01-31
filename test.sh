@@ -11,6 +11,7 @@ TEST_SCRIPT_DIR=".tests"
 
 # Function to run a single test script
 run_test_script() {
+    clear
     script=$1
     if [ -x "$script" ]; then
         echo "${BLUE}Running test: $(basename "$script")${NC}"

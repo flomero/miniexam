@@ -45,11 +45,13 @@ validate_output() {
 # Function to prepare the next exercise
 prepare_next_exercise() {
     local next_exercise_number=$1
-    local next_exercise_file_hidden="exercises/ex${next_exercise_number}/.${next_exercise_number}.txt"
-    local next_exercise_file_visable="exercises/ex${next_exercise_number}/${next_exercise_number}.txt"
-
-    if [ -f "$next_exercise_file" ]; then
+    local next_exercise_file_hidden="exercises/.ex${next_exercise_number}.txt"
+    local next_exercise_file_visable="exercises/ex${next_exercise_number}.txt"
+    echo
+    echo "----------------------------------"
+    if [ -f "$next_exercise_file_hidden" ]; then
         mv "$next_exercise_file_hidden" "$next_exercise_file_visable"
+        echo "${GREEN}Exercise ex$next_exercise_number is now visable.${NC}"
     else
         echo "${RED}File for exercise ex$next_exercise_number not found. Maybe it is already shown.${NC}"
     fi
