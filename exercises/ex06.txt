@@ -1,11 +1,11 @@
 directory:				code/ex6
 files to hand in:		ex6.c
-allowed functions:		write
+allowed functions:		-
 
-Create a function that takes a string and displays it,
+Create a function that takes a string and returns it,
 but replaces all vowels with asterisks.
 
-void	replace_vowels(char *str);
+char	*replace_vowels(char *str);
 
 Example:
 
