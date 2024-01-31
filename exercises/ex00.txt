@@ -1,0 +1,7 @@
+directory:				code/ex00
+files to hand in:		ex00.c
+allowed functions:		write
+
+Create a function that displays a character it recieves followed by a newline.
+
+void	puta(char c);
