@@ -34,6 +34,7 @@ done
 # Compare the output to the expected output
 if diff -u --ignore-all-space $EXPECTED_FILE $OUTPUT_FILE > /dev/null; then
     echo "${GREEN}Test00 Passed: Output matches expected output.${NC}"
+    # Makes the next exercise visible
     if [ -f exercises/ex00/.test.txt ]; then
         mv exercises/.ex00.txt exercises/ex00.txt
     else
