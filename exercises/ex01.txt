@@ -4,6 +4,6 @@ allowed functions:		write
 
 Write a function that checks if a given string is alphanumeric.
 It should print a 1 followed by a newline if yes and a 0 with
-a newline if not.
+a newline if not. Empty strings should print 1.
 
 void	check_an(char *str);
