@@ -1,0 +1,7 @@
+directory:				code/ex04
+files to hand in:		ex04.c
+allowed functions:		write
+
+Create a function that takes two strings and displays them one after the other.
+
+void	print_strings(char *str1, char *str2);
