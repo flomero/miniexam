@@ -1,0 +1,7 @@
+directory:				code/ex10
+files to hand in:		ex10.c
+allowed functions:		write
+
+Create a function that takes a pointer to an array of integers and its size, and displays the odd elements.
+
+void	print_odd(int *arr, int size);
