@@ -1,0 +1,7 @@
+directory:				code/ex07
+files to hand in:		ex07.c
+allowed functions:		write
+
+Create a function that takes a string and displays it, but replaces each digit with the next digit in the sequence '0123456789'. For '9', cycle back to '0'.
+
+void	rotate_digits(char *str);
