@@ -6,11 +6,11 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 19:27:52 by flfische          #+#    #+#             */
-/*   Updated: 2024/01/31 19:32:41 by flfische         ###   ########.fr       */
+/*   Updated: 2024/01/31 21:18:46 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <stdlib.h>
 
 void	putint(int num);
 
