@@ -3,5 +3,7 @@ files to hand in:		ex01.c
 allowed functions:		write
 
 Write a function that checks if a given string is alphaumeric.
+It should print a 1 followed by a newline if yes and a 0 with
+a newline if not.
 
 void	check_an(char *str);
