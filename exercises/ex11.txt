@@ -1,0 +1,17 @@
+Assignment Details:
+
+Directory: code/ex11
+Files to hand in: ex11.c
+Allowed functions: write
+
+Task:
+Write a program that prints its own command-line arguments.
+Each argument should be printed on a separate line.
+
+Function Prototype:
+int main(int argc, char *argv[]);
+
+Notes:
+- 'argc' is the argument count. It is the number of arguments passed into the program from the command line, including the name of the program.
+- 'argv' is the argument vector. It is an array of strings representing the individual arguments provided on the command line.
+- 'argv[0]' is the name of the program, 'argv[1]' is the first command-line argument, and so on.
