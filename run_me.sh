@@ -11,7 +11,6 @@ TEST_SCRIPT_DIR=".tests"
 
 # Function to run a single test script
 run_test_script() {
-    clear
     script=$1
     # Add executable permissions to the script
     chmod +x "$script"
@@ -26,9 +25,11 @@ run_test_script() {
 
 # Check if an argument is given
 if [ "$#" -eq 1 ]; then
+    clear
     TEST_SCRIPT="${TEST_SCRIPT_DIR}/ex$1/test$1.sh"
     run_test_script "$TEST_SCRIPT"
 else
+    clear
     echo "Running all tests..."
     for script in ${TEST_SCRIPT_DIR}/*/test*.sh; do
         run_test_script "$script"
