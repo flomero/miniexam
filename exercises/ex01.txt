@@ -1,0 +1,7 @@
+directory:				code/ex01
+files to hand in:		ex01.c
+allowed functions:		write
+
+Write a function that checks if a given string is alphaumeric.
+
+void	check_an(char *str);
