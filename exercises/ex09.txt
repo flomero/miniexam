@@ -1,0 +1,7 @@
+directory:				code/ex09
+files to hand in:		ex09.c
+allowed functions:		write
+
+Create a function that takes a string and displays it, but replaces each space with a tab.
+
+void	replace_space_with_tab(char *str);
