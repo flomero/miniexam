@@ -1,11 +1,6 @@
 #!/bin/bash
 source .tests/compile_and_test.sh
 
-# ANSI color codes
-GREEN='\033[0;32m'
-RED='\033[0;31m'
-NC='\033[0m' # No Color
-
 # Setup variables
 EXERCISE_DIR="code/ex00"
 EXERCISE_FILE="ex00.c"
