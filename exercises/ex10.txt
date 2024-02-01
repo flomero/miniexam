@@ -3,6 +3,7 @@ files to hand in:		ex10.c
 allowed functions:		write
 
 Create a function that takes a pointer to an array of integers and its size,
-and displays the odd elements.
+and displays the elements on odd positions separated by a " ".
+The first element is position 0.
 
 void	print_odd(int *arr, int size);

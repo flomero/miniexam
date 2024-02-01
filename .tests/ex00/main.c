@@ -6,16 +6,16 @@
 /*   By: flfische <flfische@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 17:46:11 by flfische          #+#    #+#             */
-/*   Updated: 2024/01/31 17:48:21 by flfische         ###   ########.fr       */
+/*   Updated: 2024/02/01 10:08:43 by flfische         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	puta(char c);
+void	put_char(char c);
 
 int	main(int argc, char **argv)
 {
 	if (argc == 1)
 		return (0);
-	puta(argv[1][0]);
+	put_char(argv[1][0]);
 	return (0);
 }

@@ -4,4 +4,4 @@ allowed functions:		write
 
 Create a function that displays a character it receives followed by a newline.
 
-void	puta(char c);
+void	put_char(char c);
