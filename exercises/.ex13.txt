@@ -1,0 +1,18 @@
+Assignment Details:
+
+Directory: code/ex13
+Files to hand in: ex13.c
+Allowed functions: write
+
+Task:
+Write a program that takes command-line arguments and prints them in a zigzag pattern.
+The first argument should be printed forward, the second argument backward,
+the third argument forward again, and so on.
+
+The filename should be NOT included.
+
+Function Prototype:
+int main(int argc, char *argv[]);
+
+Notes:
+- You already know how to print a string forward and backward. (ex03)
