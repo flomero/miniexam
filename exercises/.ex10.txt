@@ -2,8 +2,9 @@ directory:				code/ex10
 files to hand in:		ex10.c
 allowed functions:		malloc
 
-Create a function that takes a pointer to an array of integers and its size,
-Create a copy of it, that only includes every even entry starting in 0.
-Save it in copy. The last entry in copy should be NULL.
+Create a function that takes a pointer to an array of integers and its size.
+Create a copy of it, that only includes every even entry starting at 0,
+that can be freed. The last entry in copy should be '\0'. Return the pointer
+to the copy. If an error occurs return NULL.
 
-void	copy_even(int *arr, int size, int **copy);
+int	*copy_even(int *arr, int size);
