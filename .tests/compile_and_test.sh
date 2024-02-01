@@ -119,12 +119,12 @@ validate_output() {
     local next_exercise_number=$4
 
     if diff -u "$expected_file" "$output_file" > /dev/null; then
-        echo "${GREEN}Test${exercise_number} Passed: Output matches expected output.${NC}"
+        echo "${GREEN}Test ${exercise_number} Passed: Output matches expected output.${NC}"
         if [ -n "$next_exercise_number" ]; then
             prepare_next_exercise "$next_exercise_number"
         fi
     else
-        echo "${RED}Test${exercise_number} Failed: Output does not match expected output.${NC}"
+        echo "${RED}Test ${exercise_number} Failed: Output does not match expected output.${NC}"
         diff -u "$expected_file" "$output_file"
     fi
 }

@@ -1,0 +1,15 @@
+Assignment Details:
+
+Directory: code/ex12
+Files to hand in: ex12.c
+Allowed functions: write
+
+Task:
+Write a program that reverses the order of its own command-line arguments.
+The filename should NOT be included.
+
+Each argument should be printed on a separate line,
+but in reverse order from how they were input.
+
+Function Prototype:
+int main(int argc, char *argv[]);
