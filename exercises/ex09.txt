@@ -1,8 +1,13 @@
 directory:				code/ex09
 files to hand in:		ex09.c
-allowed functions:		write
+allowed functions:		-
 
-Create a function that takes a string and displays it,
-but replaces each space with a tab.
+Create a function that takes a string and swaps its
+halves. If the string has an odd amount of characters the
+first half is one bigger. Return the Pointer to the string after
+you changed it. Do not return a copy of it.
 
-void	replace_space_with_tab(char *str);
+char	*str_swap_halves(char *str);
+
+Example:
+HelloWorld → WorldHello
