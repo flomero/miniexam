@@ -139,6 +139,8 @@ prepare_next_exercise() {
     if [ -f "$next_exercise_file_hidden" ]; then
         mv "$next_exercise_file_hidden" "$next_exercise_file_visable"
         echo "${GREEN}Exercise ex$next_exercise_number is now visable.${NC}"
+    elif [ -f "$next_exercise_file_visable" ]; then
+        echo "${GREEN}Exercise ex$next_exercise_number is already visable.${NC}"
     else
         echo "${RED}File for exercise ex$next_exercise_number not found. Maybe it is already shown.${NC}"
     fi
