@@ -64,7 +64,52 @@ run_tests() {
     done
 }
 
+run_tests_with_multible_arguments() {
+    local executable=$1
+    local output_file=$2
+    local timeout_duration=1  # Timeout set to 5 seconds
+    shift 2
+    local test_inputs=("$@")
 
+
+    # Start spinning cursor
+    spin='-\|/'
+    i=0
+
+    # Run the spinner in the background
+    spin_cursor() {
+        while true; do
+            i=$(( (i+1) %4 ))
+            printf "\r${spin:$i:1}"
+            sleep .1
+        done
+    }
+    spin_cursor &
+    spin_pid=$!
+
+    # Run the command in the background
+    "./$executable" "${test_inputs[@]}" >> "$output_file" &
+    pid=$!
+
+    # Wait for the specified duration
+    sleep "$timeout_duration"
+
+    # Check if the process is still running and kill it if so
+    if kill -0 $pid 2>/dev/null; then
+        echo -e "\rTest failed due to timeout" >> "$output_file"
+        kill $pid 2>/dev/null
+    fi
+
+    # Kill the spinner
+    kill $spin_pid 2>/dev/null
+    wait $spin_pid 2>/dev/null
+
+    # Overwrite the spinner with spaces and move back to the start of the line
+    echo -ne "\r    \r"
+
+    # Wait for the process to finish or be terminated
+    wait $pid 2>/dev/null
+}
 
 # Function to validate output
 validate_output() {
