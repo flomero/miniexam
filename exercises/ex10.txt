@@ -1,9 +1,9 @@
 directory:				code/ex10
 files to hand in:		ex10.c
-allowed functions:		write
+allowed functions:		malloc
 
 Create a function that takes a pointer to an array of integers and its size,
-and displays the elements on odd positions separated by a " ".
-The first element is position 0.
+Create a copy of it, that only includes every even entry starting in 0.
+Save it in copy. The last entry in copy should be NULL.
 
-void	print_odd(int *arr, int size);
+void	copy_even(int *arr, int size, int **copy);
