@@ -138,7 +138,7 @@ prepare_next_exercise() {
     echo
     echo "----------------------------------"
     if [ -f "$next_exercise_file_hidden" ]; then
-        mv "$next_exercise_file_hidden" "$next_exercise_file_visible"
+        mv "$next_exercise_file_hidden" "$next_exercise_file_visable"
         echo "${GREEN}Exercise ex$next_exercise_number is now visible.${NC}"
     elif [ -f "$next_exercise_file_visable" ]; then
         echo "${GREEN}Exercise ex$next_exercise_number is already visible.${NC}"
