@@ -125,6 +125,7 @@ validate_output() {
         fi
     else
         echo "${RED}Test ${exercise_number} Failed: Output does not match expected output.${NC}"
+        echo "${RED}If you want to skip this question just run 'sh grademe.sh skip'.${NC}"
         diff -u "$expected_file" "$output_file"
     fi
 }
