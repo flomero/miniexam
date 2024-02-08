@@ -4,7 +4,9 @@ allowed functions:		malloc
 
 Create a function that takes a pointer to an array of integers and its size.
 Create a copy of it, that only includes every even entry starting at 0,
-that can be freed. The last entry in copy should be '\0'. Return the pointer
+that can be freed. The last entry in copy should be '0'. Return the pointer
 to the copy. If an error occurs return NULL.
+
+You can assume that that the initial array does not include a 0.
 
 int	*copy_even(int *arr, int size);
