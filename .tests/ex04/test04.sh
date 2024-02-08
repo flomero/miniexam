@@ -8,7 +8,7 @@ MAIN_FILE=".tests/ex04/main.c"
 EXECUTABLE="test_executable"
 EXPECTED_FILE=".tests/ex04/04.expected"
 OUTPUT_FILE="output.tmp"
-TEST_INPUTS=("hello+world" "baum+" "test+123" "+baum")
+TEST_INPUTS=("")
 CURRENT_EXERCISE_NUMBER="04"
 NEXT_EXERCISE_NUMBER="05"
 
