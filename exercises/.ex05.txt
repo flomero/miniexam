@@ -2,6 +2,6 @@ directory:				code/ex05
 files to hand in:		ex05.c
 allowed functions:		write
 
-Create a function that takes a string and displays it in lowercase.
+Create a function that takes a string and displays it in uppercase.
 
-void	print_lowercase(char *str);
+void	print_uppercase(char *str);
