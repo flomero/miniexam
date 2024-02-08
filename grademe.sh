@@ -41,11 +41,11 @@ run_test_script() {
     script=$1
     chmod +x "$script" # Add executable permissions to the script
     if [ -x "$script" ]; then
-        echo -e "${BLUE}Running test: $(basename "$script")${NC}"
+        echo "${BLUE}Running test: $(basename "$script")${NC}"
         . "$script"
         echo "----------------------------------"
     else
-        echo -e "${RED}Test script $script not executable or found.${NC}"
+        echo "${RED}Test script $script not executable or found.${NC}"
     fi
 }
 
