@@ -1,0 +1,21 @@
+Directory: code/ex14
+Files to hand in: ex14.c
+Allowed functions: malloc
+
+Create a function that takes a pointer to an array of integers and its size.
+Create a copy of it, that only includes entries that are prime numbers.
+The last entry in the copy should be '\0'. Return the pointer to the copy.
+If an error occurs return NULL.
+
+In addition, write a second function that takes a pointer to an array of integers and its size,
+and rearranges the array in-place so that all prime numbers come before all non-prime numbers.
+The order of the prime numbers and the order of the non-prime numbers should be the same as in the original array.
+
+Function Prototypes:
+int *copy_primes(int *arr, int size);
+void rearrange_primes(int *arr, int size);
+
+Notes:
+- You will need to write a helper function to check if a number is prime.
+- Be careful with memory allocation in the 'copy_primes' function. You won't know how many primes there are until you check each number, so you may need to reallocate memory as you find each prime.
+- The 'rearrange_primes' function should not create a new array. It should rearrange the numbers in the existing array.
