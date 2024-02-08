@@ -1,5 +1,5 @@
-Directory: code/ex17
-Files to hand in: ex17.c
+Directory: code/ex14
+Files to hand in: ex14.c
 Allowed functions: malloc
 
 Create a function that takes a pointer to an array of integers and its size.
