@@ -1,0 +1,15 @@
+Value: 0, Base: 2, Result: 0
+Value: 0, Base: 10, Result: 0
+Value: 0, Base: 16, Result: 0
+Value: 5, Base: 2, Result: 101
+Value: 5, Base: 10, Result: 5
+Value: 5, Base: 16, Result: 5
+Value: 10, Base: 2, Result: 1010
+Value: 10, Base: 10, Result: 10
+Value: 10, Base: 16, Result: A
+Value: 15, Base: 2, Result: 1111
+Value: 15, Base: 10, Result: 15
+Value: 15, Base: 16, Result: F
+Value: -15, Base: 2, Result: -1111
+Value: -15, Base: 10, Result: -15
+Value: -15, Base: 16, Result: -F
