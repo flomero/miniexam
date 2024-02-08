@@ -4,6 +4,7 @@ Allowed functions: malloc
 
 Create a function that takes a pointer to an array of integers and its size.
 Create a copy of it, that only includes entries that are prime numbers.
+The last entry in the copy should be zero.
 Return the pointer to the copy. If an error occurs return NULL.
 
 In addition, write a second function that takes a pointer to an array of integers and its size,
